@@ -11,7 +11,7 @@ TEMPDIR="/tmp/webfiles"
 echo "_______________________________"
 echo "install package & [ > /dev/null ] means i dont want to see the output thats why redirect in different dir "
 echo "_______________________________"
-sudo yum install $PACKAGE -y > /dev/null
+sudo yum install $PACKAGE -y >/dev/null
 echo
 
 #start service
@@ -30,8 +30,8 @@ mkdir -p $TEMPDIR
 cd $TEMPDIR
 echo
 
-wget $URL > /dev/null
-unzip $ART_NAME.zip > /dev/null
+wget $URL >/dev/null
+unzip $ART_NAME.zip >/dev/null
 sudo cp -r $ART_NAME/* /var/www/html
 echo
 
