@@ -1,5 +1,3 @@
-     status          outputs status of the vagrant machine
-     suspend         suspends the machine
   1 #!/bin/bash
   2
   3 #install dependencies
